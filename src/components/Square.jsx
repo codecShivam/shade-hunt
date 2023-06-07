@@ -4,7 +4,7 @@ const Square = ({ colorValue, hexValue }) => {
   return (
     <div>
       <div
-        className="w-96 rounded-xl flex flex-col justify-center  h-96 border-4 border-slate-200 shadow-gray-700 shadow-xl items-center"
+        className="w-80 sm:m-0 m-4 rounded-xl flex flex-col justify-center  h-80 border-4 border-slate-200 shadow-gray-700 shadow-xl items-center"
         style={{ backgroundColor: colorValue ? colorValue : "white" }}
       >
         <p

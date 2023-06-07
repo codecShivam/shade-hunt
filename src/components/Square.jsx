@@ -2,9 +2,7 @@ import React from "react";
 
 const Square = ({ colorValue, hexValue }) => {
   return (
-    <div
-      
-    >
+    <div>
       <div
         className="w-96 rounded-xl flex flex-col justify-center  h-96 border-4 border-slate-200 shadow-gray-700 shadow-xl items-center"
         style={{ backgroundColor: colorValue ? colorValue : "white" }}

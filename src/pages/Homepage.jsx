@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../components/Input";
 import Square from "../components/Square";
-import bgImg from "../assets/bgImg.svg";
+import bgImg from "../assets/bgImg.jpg";
 import { useState } from "react";
 
 const Homepage = () => {

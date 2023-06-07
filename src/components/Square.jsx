@@ -1,13 +1,28 @@
 import React from "react";
 
-const Square = ({ colorValue }) => {
+const Square = ({ colorValue, hexValue }) => {
   return (
-    <div className="w-screen h-[60vh] flex flex-row justify-center items-end">
+    <div
+      
+    >
       <div
-        className="w-96 h-96 flex flex-row justify-center border-4 border-slate-200 shadow-gray-700 shadow-xl items-center"
-        style={{ backgroundColor: colorValue }}
+        className="w-96 rounded-xl flex flex-col justify-center  h-96 border-4 border-slate-200 shadow-gray-700 shadow-xl items-center"
+        style={{ backgroundColor: colorValue ? colorValue : "white" }}
       >
-        <p  className="">{colorValue ? colorValue : "Empty Value"}</p>
+        <p
+          className={`${
+            colorValue === "black" ? "text-white" : "text-black"
+          } text-xl font-mono tracking-tight font-semibold`}
+        >
+          {colorValue ? colorValue.toUpperCase() : "Empty Value"}
+        </p>
+        <p
+          className={`${
+            colorValue === "black" ? "text-white" : "text-black"
+          } text-xl font-mono tracking-tight font-semibold`}
+        >
+          {hexValue ? hexValue : null}
+        </p>
       </div>
     </div>
   );
